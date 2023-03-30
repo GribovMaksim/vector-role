@@ -3,6 +3,7 @@ This role can install and configure Vector for Clickhouse on Centos 8
 
 ### Role Variables
 | vars | Description | Value | Location |
+| ------------- | ------------- | ------------- | ------------- | 
 | vector_version | Vector version to install | 0.22.1 | defaults/main.yml |
 | vector_clickhouse_ip | Addres of Clickhouse instance | localhost | defaults/main.yml |
 | clickhouse_db_name | Clickhouse DB where to store logs | "logs" | defaults/main.yml |
@@ -10,7 +11,8 @@ This role can install and configure Vector for Clickhouse on Centos 8
 | vector_url | URL for Vector download | https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-1.x86_64.rpm | vars/main.yml |
 | vector_config_dir | Vector config file location | "/etc/vector" | vars/main.yml |
 | vector_config | Vector config file | value below | default/main.yml |
-```bash vector_config ```
+
+```vector_config ```
 ```bash
   sources:
     demo_logs:
