@@ -1,5 +1,5 @@
 ### Vector
-This role can install and configure Vector for Clickhouse on Centos 8
+This role can install and configure Vector for Clickhouse on Centos 7
 
 ### Role Variables
 | vars | Description | Value | Location |
