@@ -1,5 +1,3 @@
-nes (10 sloc)  301 Bytes
-
 ---
 - name: Vector | Apply template
   become: true
