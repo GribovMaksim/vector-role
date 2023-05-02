@@ -2,7 +2,7 @@
 # handlers file for vector-role
 - name: Start Vector service
   become: true
-  ansible.builtin.systemd:
+  ansible.builtin.service:
     name: vector
     state: restarted
-    daemon_reload: true
+  when: ansible_facts.virtualization_type != "docker"
